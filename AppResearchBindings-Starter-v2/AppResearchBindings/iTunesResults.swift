@@ -23,23 +23,23 @@
 import Cocoa
 
 class Result : NSObject {
-  dynamic var rank = 0
-  dynamic var artistName = ""
-  dynamic var trackName = ""
-  dynamic var averageUserRating = 0.0
-  dynamic var averageUserRatingForCurrentVersion = 0.0
-  dynamic var itemDescription = ""
-  dynamic var price = 0.00
-  dynamic var releaseDate = Date()
-  dynamic var artworkURL: URL?
-  dynamic var artworkImage: NSImage?
-  dynamic var screenShotURLs: [URL] = []
-  dynamic var screenShots = NSMutableArray()
-  dynamic var userRatingCount = 0
-  dynamic var userRatingCountForCurrentVersion = 0
-  dynamic var primaryGenre = ""
-  dynamic var fileSizeInBytes = 0
-  dynamic var cellColor = NSColor.white
+  @objc dynamic var rank = 0
+  @objc dynamic var artistName = ""
+  @objc dynamic var trackName = ""
+  @objc dynamic var averageUserRating = 0.0
+  @objc dynamic var averageUserRatingForCurrentVersion = 0.0
+  @objc dynamic var itemDescription = ""
+  @objc dynamic var price = 0.00
+  @objc dynamic var releaseDate = Date()
+  @objc dynamic var artworkURL: URL?
+  @objc dynamic var artworkImage: NSImage?
+  @objc dynamic var screenShotURLs: [URL] = []
+  @objc dynamic var screenShots = NSMutableArray()
+  @objc dynamic var userRatingCount = 0
+  @objc dynamic var userRatingCountForCurrentVersion = 0
+  @objc dynamic var primaryGenre = ""
+  @objc dynamic var fileSizeInBytes = 0
+  @objc dynamic var cellColor = NSColor.white
   
   init(dictionary: Dictionary<String, AnyObject>) {
     artistName = dictionary["artistName"] as! String
