@@ -22,8 +22,19 @@
 
 import Cocoa
 
-@NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-  
+class ViewController: NSViewController {
+    
+    @IBOutlet weak var numberResultsComboBox: NSComboBox!
+    @IBOutlet weak var collectionView: NSCollectionView!
+    @IBOutlet weak var searchTextField: NSTextField!
+    @IBOutlet var searchResultsController: NSArrayController!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func searchClicked(_ sender: NSButton) {
+        print("searchClicked here")
+    }
 }
-

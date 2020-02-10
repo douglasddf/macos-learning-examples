@@ -75,7 +75,7 @@ class Result : NSObject {
     
     let formatter = DateFormatter()
     let enUSPosixLocale = NSLocale(localeIdentifier: "en_US_POSIX")
-    formatter.locale = enUSPosixLocale as Locale?
+    formatter.locale = enUSPosixLocale as Locale
     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
     if let releaseDateString = dictionary["releaseDate"] as? String {
       releaseDate = formatter.date(from: releaseDateString)!

@@ -39,31 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED29BDAA2087BAE200E05083 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F22015791C2A35080039E53B /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		ED29BDAB2087BB0200E05083 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F22015821C2A35600039E53B /* iTunesResults.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		ED29BDAC2087BB0E00E05083 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F22015751C2A35080039E53B /* ViewController.swift */,
-				F22015841C2A390F0039E53B /* iTunesRequestManager.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		F22015671C2A35080039E53B = {
 			isa = PBXGroup;
 			children = (
@@ -86,11 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				F22015731C2A35080039E53B /* AppDelegate.swift */,
-				ED29BDAB2087BB0200E05083 /* Models */,
-				ED29BDAC2087BB0E00E05083 /* Controllers */,
-				ED29BDAA2087BAE200E05083 /* Views */,
+				F22015751C2A35080039E53B /* ViewController.swift */,
 				F22015771C2A35080039E53B /* Assets.xcassets */,
+				F22015791C2A35080039E53B /* Main.storyboard */,
 				F220157C1C2A35080039E53B /* Info.plist */,
+				F22015821C2A35600039E53B /* iTunesResults.swift */,
+				F22015841C2A390F0039E53B /* iTunesRequestManager.swift */,
 				F2A8C0E91C3CB3D900467D49 /* AppleIcon.png */,
 			);
 			path = AppResearchBindings;
@@ -123,12 +99,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Razeware, LLC";
 				TargetAttributes = {
 					F220156F1C2A35080039E53B = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -236,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -286,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -298,11 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AppResearchBindings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.douglasddf.macos-learning-examples.AppResearchBindings";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgundersen.AppResearchBindings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -311,11 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AppResearchBindings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.douglasddf.macos-learning-examples.AppResearchBindings";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgundersen.AppResearchBindings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
