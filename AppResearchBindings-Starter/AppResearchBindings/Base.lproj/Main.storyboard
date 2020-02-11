@@ -795,7 +795,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.price" id="jgW-qk-MwY"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.price" id="cVR-iY-tkM">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-TS-3UY">
@@ -823,7 +827,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.primaryGenre" id="LmC-4a-ZYt"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.primaryGenre" id="LMF-F8-gxY">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-sy-9sv" userLabel="Description Text View">
@@ -892,7 +900,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.fileSizeInBytes" id="6ug-gR-u7n"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.fileSizeInBytes" id="bX0-kA-aEU">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoy-bX-D9V">
@@ -933,7 +945,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.releaseDate" id="gSs-Lv-Hx8"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.releaseDate" id="wvJ-gM-xbK">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ELI-dy-TsR">
@@ -960,7 +976,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.userRatingCount" id="AAt-KW-AKu"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.userRatingCount" id="xPi-Eu-Qsb">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HiS-nX-eOn">
@@ -987,7 +1007,11 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <connections>
-                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.averageUserRating" id="lzC-pP-UMy"/>
+                                            <binding destination="D69-jK-FKQ" name="value" keyPath="selection.averageUserRating" id="rQq-lA-XeI">
+                                                <dictionary key="options">
+                                                    <string key="NSNoSelectionPlaceholder">--</string>
+                                                </dictionary>
+                                            </binding>
                                         </connections>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zgz-rq-Xt6">
